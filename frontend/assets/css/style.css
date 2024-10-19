@@ -18,8 +18,155 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     width: 1180px;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Header */
+.header {
+    background-color: #ffff;
+    padding: 24px;
+}
+
+.header .inner__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header .header__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header .header__bar {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.header .header__bar li {
+    margin-right: 24px;
+}
+
+.header .header__bar li a {
+    font-size: 16px;
+    color: black;
+}
+
+.header .header__form {
+    background-color: #F0F0F0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 52px;
+    height: 48px;
+    display: flex;
+    flex: 1;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .header__form input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-right: 20px;
+    
+}
+
+.header .header__form button {
+    border: 0;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 20px;
+    color: #8F8F8F;
+}
+
+.header .header__cart {
+    margin-left: 40px;
+}
+
+.header .header__cart a{
+    font-size: 27px;
+    color: black;
+}
+/* End header */
+
+
+
+
+/* footer */
+.footer {
+    background-color: #F0F0F0;
+}
+
+.footer .inner__wrap {
+    padding-top: 142px;
+    padding-bottom: 52px;
+}
+
+.footer .footer__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.footer .footer__main {
+    width: 248px;
+}
+
+.footer .footer__main .footer__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer .footer__main .footer__desc {
+    opacity: 0.6;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.footer .footer__main .footer__social i{
+    margin-left: 12px;
+    font-size: 28px;
+    color: black;
+}
+
+.footer .footer__bar .footer__title {
+    font-size: 16px;
+    margin-bottom: 26px;
+    font-weight: 700;
+}
+
+.footer .footer__bar .footer__desc li {
+    margin-bottom: 10px;
+}
+
+.footer .footer__bar .footer__desc li a {
+    color: black;
+    opacity: 0.6;
+}
+
+.footer .footer__bottom {
+    opacity: 0.6;
+    text-align: center;
+}
+/* end footer */
