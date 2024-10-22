@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .inner__wrap {
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .rating {
+            margin: 5px 0;
+        }
+
+        .stars {
+            color: #f39c12;
+        }
+
+        .price {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .current-price {
+            font-weight: bold;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 5px;
+        }
+
+        .discount {
+            color: #e74c3c;
+            margin-left: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none; /* Bỏ gạch chân cho tất cả các liên kết */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần THỜI TRANG MỚI -->
+    <h2>THỜI TRANG MỚI</h2>
+    <div class="container">
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/clother-1.jpg" alt="Áo Thun Nam Đơn Giản">
+                </div>
+                <h3 class="item-title">Áo Thun Nam Đơn Giản</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">120.000đ</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/clother-2.jpg" alt="Quần Jean Nam Phong Cách">
+                </div>
+                <h3 class="item-title">Quần Jean Nam Phong Cách</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">480.000đ</span>
+                    <span class="old-price">600.000đ</span>
+                    <span class="discount">-20%</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/clother-3.jpg" alt="Áo Sơ Mi Caro">
+                </div>
+                <h3 class="item-title">Áo Sơ Mi Caro</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">220.000đ</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/clother-4.jpg" alt="Áo Thun Nam Sọc Cam">
+                </div>
+                <h3 class="item-title">Áo Thun Nam Sọc Cam</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">480.000đ</span>
+                    <span class="old-price">600.000đ</span>
+                    <span class="discount">-20%</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="#" class="button">Xem Tất Cả</a>
+    </div>
+
+    <!-- Phần GIẢM GIÁ NHIỀU -->
+    <h2>GIẢM GIÁ NHIỀU</h2>
+    <div class="container">
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/panter-3.png" alt="Áo Sơ Mi Sọc Dọc">
+                </div>
+                <h3 class="item-title">Áo Sơ Mi Sọc Dọc</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">120.000đ</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/panter-4.png" alt="Áo Thun Nam In Hình">
+                </div>
+                <h3 class="item-title">Áo Thun Nam In Hình</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">480.000đ</span>
+                    <span class="old-price">600.000đ</span>
+                    <span class="discount">-20%</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/panter-1.png" alt="Quần Short Bermuda">
+                </div>
+                <h3 class="item-title">Quần Short Bermuda</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">220.000đ</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="inner__wrap">
+            <a href="#">
+                <div class="img-wrapper">
+                    <img src="/Clothing-shop/images/panter-2.png" alt="Quần Jean Màu Đen">
+                </div>
+                <h3 class="item-title">Quần Jean Màu Đen</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5/5</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">126.000đ</span>
+                    <span class="old-price">180.000đ</span>
+                    <span class="discount">-30%</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="#" class="button">Xem Tất Cả</a>
+    </div>
+</body>
+
+</html>
