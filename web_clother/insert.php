@@ -1,6 +1,7 @@
 <?php
 include "connect.php";
-
+session_start();
+echo $_SESSION['login']['username'];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cart_id = mysqli_real_escape_string($conn, $_POST['cart_id']);
     $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);

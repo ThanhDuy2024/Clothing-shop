@@ -1,39 +1,7 @@
 <?php
 include "connect.php";
 session_start();
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
-    $sql = "SELECT * FROM account WHERE UserName = '$username' AND Password = '$password'";
-    $result = mysqli_query($conn, $sql);
-    
-    if ($result && mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_assoc($result); // Lấy dữ liệu từ kết quả truy vấn
-
-        $use = isset($_POST['username']) ? $_POST['username'] : ''; 
-
-
-        $_SESSION['login']['username'] = $use; 
-
-        $_SESSION['login']['id'] = $row['user_id']; 
-        $allowed_actions = ['about', 'contact', 'products']; // Danh sách các hành động hợp lệ
-        if (isset($_GET['action']) && in_array($_GET['action'], $allowed_actions)) {
-            $action = $_GET['action'];
-            header('location: ' . $action . '.php');
-            exit;
-        } 
-        else {
-            header('location: ' . 'index' . '.php');
-            exit;
-        }
-    } else {
-        echo "Tên đăng nhập hoặc mật khẩu không đúng.";
-    }
-}
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,28 +9,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Login</title>
+    <title>Home</title>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
             <div class="inner__wrap">
-                <a class="header__title" href="index.php">28.Shop</a>
+                <a class="header__title" href="index.html">28.Shop</a>
                 <ul class="header__bar">
                     <li>
                         <a href="/">Giới Thiệu</a>
                     </li>
+
                     <li>
-                        <a href="/">Sản Phẩm</a>
+                        <a href="lietke_user.php">Sản Phẩm</a>
                     </li>
+
                     <li>
                         <a href="/">Bài Viết</a>
                     </li>
+
                     <li>
                         <a href="/">Liên Hệ</a>
                     </li>
                 </ul>
+
                 <form action="" class="header__form">
                     <input type="text" placeholder="Tìm kiếm sản phẩm...">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -70,32 +41,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="header__cart">
                     <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <?php if (!isset($_SESSION['login']) || !isset($_SESSION['login']['username'])): ?>
+                        <a href="login.php"><i class="fa-regular fa-user"></i></a>
+                    <?php endif; ?>
+                    <?php if (isset($_SESSION['login']['username'])):;?>
+                        <a href="accout.php"><i class="fa-regular fa-user"></i></a>
+                    <?php endif; ?>
                 </div>
 
             </div>
         </div>
     </header>
-    <div class="login">
-        <div class="container">
-            <div class="inner__wrap">
-                <div class="form">
-                    <h1 class="title">Đăng nhập</h1>
-                    <form method="POST" action="">
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username" required>
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" required>
-                    <button>Đăng nhập</button>
-                    </form>
-                    <div class="notAccount">
-                        <a href="register.html">Bạn chưa có tài khoản ?</a>
-                        <a href="">Quên mật khẩu?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     <footer class="footer">
         <div class="container">
             <div class="inner__wrap">
@@ -172,6 +130,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </footer>
+
+    <script type="module" src="assets/js/script.js">s</script>
+
 </body>
 
 </html>
