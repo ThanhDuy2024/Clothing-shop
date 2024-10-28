@@ -5,7 +5,6 @@ if(loginForm) {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
-        console.log(password);
 
         if(email && password) {
             alert("Đăng nhập thành công");
