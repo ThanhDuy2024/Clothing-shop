@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Login</title>
+    <title>Sản phẩm</title>
 </head>
 <body>
     <header class="header">
@@ -18,7 +18,7 @@
                     </li>
 
                     <li>
-                        <a href="product.html">Sản Phẩm</a>
+                        <a href="product.html" target="_blank">Sản Phẩm</a>
                     </li>
 
                     <li>
@@ -37,27 +37,75 @@
 
                 <div class="header__cart">
                     <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
                 </div>
 
             </div>
         </div>
     </header>
 
-
-    <div class="login">
+    <div class="product-Layout">
         <div class="container">
             <div class="inner__wrap">
-                <div class="form">
-                    <h1 class="title">Đăng nhập</h1>
-                    <form id="login-form">
-                        <input type="email" name="email" placeholder="Nhập email của bạn.....">
-                        <input type="password" name="password" placeholder="Nhập mật khẩu của bạn.....">
-                        <button>Đăng nhập</button>
-                    </form>
-                    <div class="notAccount">
-                        <a href="register.html">Bạn chưa có tài khoản ?</a>
-                        <a href="">Quên mật khẩu?</a>
+                <div class="fillter">
+                    <div class="fillter-title">
+                        <img src="../images/Filter.svg" alt="" srcset="">
+                        <div class="title">Bộ lọc</div>
+                    </div>
+
+                    <div class="fillter-top">
+                        <div class="title">Thể loại</div>
+                        <div class="inner-check">
+                            <div class="check">
+                                <input type="checkbox" name="">
+                                <div class="check-title">Đơn Giản</div>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="">
+                                <div class="check-title">Lịch Lãm</div>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="">
+                                <div class="check-title">Dạ Hội</div>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="">
+                                <div class="check-title">GYM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-list">
+                    <div class="title">Sản phẩm</div>
+                    <div class="list">
+                        <div class="box-title">
+                            <div class="images">
+                                <img src="../images/clother-1.jpg" alt="">
+                            </div>
+        
+                            <div class="content">
+                                <a href="/">Áp Thun Nam Đơn Giản</a>
+                            </div>
+        
+                            <div class="star">
+                                <div class="inner-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="dg">5/5</div>
+                            </div>
+        
+                            <div class="price">
+                                120.000đ
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,7 +189,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/script.js"></script>
 </body>
 </html>

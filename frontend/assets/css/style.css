@@ -378,7 +378,7 @@ form {
 }
 
 .section-2 .box-title {
-    width: calc(100%/4 - 20px);
+    width: calc(100%/4 - 60px/4);
     margin-right: 20px;
 }
 
@@ -631,3 +631,109 @@ form {
     opacity: 0.6;
 }
 /* End section-4 */
+
+/* Product layout */
+.product-Layout {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.product-Layout .inner__wrap {
+    display: flex;
+}
+
+.product-Layout .fillter {
+    width: calc(25% - 5px);
+    margin-right: 5px;
+}
+
+.product-Layout .fillter .fillter-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px
+}
+
+.product-Layout .fillter .fillter-title img{
+    margin-right: 8px;
+}
+
+.product-Layout .fillter .fillter-title div {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-Layout .fillter .fillter-top .title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-Layout .fillter .fillter-top .inner-check {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EBEEEF;
+}
+
+.product-Layout .fillter .fillter-top .inner-check .check{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.product-Layout .fillter .fillter-top .inner-check .check input {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: 1px solid #CCD1D2;
+    accent-color: #34495e;
+}
+
+.product-Layout .product-list {
+    width: calc(75% - 5px);
+    margin-left: 5px;
+}
+
+.product-Layout .product-list .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.product-Layout .product-list .content {
+    margin-bottom: 10px;
+}
+
+.product-Layout .product-list .content a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-Layout .product-list .price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.product-Layout .product-list .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-Layout .product-list .list .box-title{
+    width: calc(100% / 3 - 40px/3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product-Layout .product-list .list .box-title:nth-child(4n) {
+    margin-right: 20px;
+}
+
+.product-Layout .product-list .list .box-title:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product-Layout .product-list .list .box-title img{
+    width: 100%;
+}
+/* End Product layout */
