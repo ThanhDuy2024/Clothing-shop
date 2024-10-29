@@ -33,3 +33,17 @@ if(registerForm) {
         }
     })
 }
+
+//pagination
+const paginationAll = document.querySelectorAll(".pagination-all")
+if(paginationAll){
+    paginationAll.forEach((item) => {
+        item.addEventListener("click", () => {
+            const itemPagi = document.querySelector(".pagination-bg");
+            if(itemPagi) {
+                itemPagi.classList.remove("pagination-bg")
+            }
+            item.classList.add("pagination-bg")
+        })
+    })
+}

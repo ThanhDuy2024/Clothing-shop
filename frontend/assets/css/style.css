@@ -736,4 +736,35 @@ form {
 .product-Layout .product-list .list .box-title img{
     width: 100%;
 }
+
+.product-Layout .pagination {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-Layout .pagination .pagination-all {
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.product-Layout .pagination .pagination-bg {
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+}
+
+.product-Layout .pagination .pagination-all:hover {
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+}
+
 /* End Product layout */
