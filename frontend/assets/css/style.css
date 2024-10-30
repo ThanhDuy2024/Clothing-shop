@@ -771,15 +771,16 @@ form {
 /* product-detail */
 .product-detail {
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .product-detail .inner__wrap {
     display: flex;
+    padding-left: 20px;
+    border: 1px solid #EBEEEF;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 20px;
+    border-radius: 20px;
 }
 
 .product-detail .images {
@@ -932,4 +933,7 @@ form {
     color: #000000;
 }
 
+.section-2-detail {
+    margin-bottom: 62px;
+}
 /* end product-detail */
