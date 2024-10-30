@@ -47,3 +47,33 @@ if(paginationAll){
         })
     })
 }
+
+//discount code
+const discountCode = document.querySelector(".discount-code");
+if(discountCode) {
+    const discount = discountCode.querySelectorAll(".discount");
+    discount.forEach(item => {
+        item.addEventListener("click", () => {
+            const colorBg = document.querySelector(".color-bg");
+            if(colorBg) {
+                colorBg.classList.remove("color-bg");
+            }
+            item.classList.add("color-bg");
+        })
+    })
+}
+
+//color size
+const innerSize = document.querySelector(".inner-size");
+if(innerSize) {
+    const size = innerSize.querySelectorAll(".size");
+    size.forEach(item => {
+        item.addEventListener("click", () => {
+            const colorBg = document.querySelector(".color-size");
+            if(colorBg) {
+                colorBg.classList.remove("color-size");
+            }
+            item.classList.add("color-size");
+        })
+    })
+}

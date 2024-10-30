@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Sản phẩm</title>
+    <title>Thông tin sản phẩm</title>
 </head>
 <body>
     <header class="header">
@@ -44,83 +44,56 @@
         </div>
     </header>
 
-    <div class="product-Layout">
+    <div class="product-detail">
         <div class="container">
             <div class="inner__wrap">
-                <div class="fillter">
-                    <div class="fillter-title">
-                        <img src="../images/Filter.svg" alt="" srcset="">
-                        <div class="title">Bộ lọc</div>
+                <div class="images">
+                    <img src="../images/clother-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="breadcrumb">
+                        <a href="index.html">Trang chủ</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="product.html">Sản Phẩm</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="detail.html">Áo Thun Nam Đơn Giản</a>
                     </div>
-
-                    <div class="fillter-top">
-                        <div class="title">Thể loại</div>
-                        <div class="inner-check">
-                            <div class="check">
-                                <input type="checkbox" name="">
-                                <div class="check-title">Đơn Giản</div>
-                            </div>
-
-                            <div class="check">
-                                <input type="checkbox" name="">
-                                <div class="check-title">Lịch Lãm</div>
-                            </div>
-
-                            <div class="check">
-                                <input type="checkbox" name="">
-                                <div class="check-title">Dạ Hội</div>
-                            </div>
-
-                            <div class="check">
-                                <input type="checkbox" name="">
-                                <div class="check-title">GYM</div>
-                            </div>
-                        </div>
+                    <div class="box-title">
+                        <div class="title">Áo Thun Nam Đơn Giản</div>
+                        <div class="price">120.000đ</div>
+                    </div>
+                    <div class="inner-button">
+                        <a href="#" class="bold">Liên hệ</a>
+                        <a href="#"><i class="fa-regular fa-heart"></i> Thêm vào giỏ hàng</a>
+                    </div>
+                    <div class="discount-code">
+                        <p>Mã giảm giá:</p>
+                        <p class="discount color-bg">Giảm 5k</p>
+                        <p class="discount">Giảm 10k</p>
+                        <p class="discount">Giảm 20k</p>
+                    </div>
+                    <div class="shipping">
+                        <p class="">Vận chuyển:</p>
+                        <p class=""><i class="fa-solid fa-truck-moving"></i> Miễn phí vận chuyển.</p>
+                    </div>
+                    <div class="inner-size">
+                        <p>Size:</p>
+                        <p class="size color-size">S</p>
+                        <p class="size">M</p>
+                        <p class="size">L</p>
+                    </div>
+                    <div class="shared">
+                        <p><i class="fa-solid fa-share-nodes"></i> Chia sẻ:</p>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-twitch"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-square-x-twitter"></i></a>
                     </div>
                 </div>
-
-                <div class="product-list">
-                    <div class="title">Sản phẩm</div>
-                    <div class="list">
-                        <div class="box-title">
-                            <div class="images">
-                                <img src="../images/clother-1.jpg" alt="">
-                            </div>
-        
-                            <div class="content">
-                                <a href="detail.html">Áo Thun Nam Đơn Giản</a>
-                            </div>
-        
-                            <div class="star">
-                                <div class="inner-star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="dg">5/5</div>
-                            </div>
-        
-                            <div class="price">
-                                120.000đ
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pagination" id="pagination">
-                        <div class="pagination-arrow pagination-all" id="pagination-item"><i class="fa-solid fa-arrow-left"></i></div>
-                        <div class="pagination-number pagination-all pagination-bg" id="1">1</div>
-                        <div class="pagination-number pagination-all" id="2">2</div>
-                        <div class="pagination-number pagination-all" id="3">3</div>
-                        <div class="pagination-number pagination-all" id="4">...</div>
-                        <div class="pagination-number pagination-all" id="5">20</div>
-                        <div class="pagination-arrow pagination-all" id="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
-                    </div>
-                </div> 
             </div>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -200,5 +173,6 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
