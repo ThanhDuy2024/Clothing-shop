@@ -77,3 +77,15 @@ if(innerSize) {
         })
     })
 }
+
+//submit
+const productDetail = document.querySelector(".submit");
+if(productDetail) {
+    const overlay = document.querySelector(".overlay");
+    productDetail.addEventListener("click", () => {
+        overlay.classList.add("show-overlay");
+    })
+    overlay.addEventListener("click", () => {
+        overlay.classList.remove("show-overlay");
+    })
+}
