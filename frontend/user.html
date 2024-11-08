@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Người dùng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="inner__wrap">
+                <a class="header__title" href="index.html">28.Shop</a>
+                <ul class="header__bar">
+                    <li>
+                        <a href="/">Giới Thiệu</a>
+                    </li>
+
+                    <li>
+                        <a href="product.html" target="_blank">Sản Phẩm</a>
+                    </li>
+
+                    <li>
+                        <a href="/">Bài Viết</a>
+                    </li>
+
+                    <li>
+                        <a href="/">Liên Hệ</a>
+                    </li>
+                </ul>
+
+                <form action="" class="header__form">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <div class="header__cart">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="user">
+        <div class="container">
+            <div class="inner__wrap">
+                <div class="box-right">
+                    <div class="user-infor">
+                        <div class="images">
+                            <img src="../images/user.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title font">duylm132</div>
+                            <div class="edit font"><i class="fa-solid fa-pencil"></i>Sửa hồ sơ</div>
+                        </div>
+                    </div>
+
+                    <div class="inner-infor">
+                        <div class="title" id="account"><i class="fa-regular fa-user"></i> Tài khoản của tôi</div>
+                        <div class="infor-item">
+                            <a href="user.html" class="" id="item">Hồ sơ</a>
+                            <a href="cart.html">Giỏ hàng</a>
+                            <a href="">Ngân hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-left">
+                    <div class="title">
+                        <h2>Hồ sơ của tôi</h2>
+                        <span>Quản lý thông tin hồ sơ để bảo mật tài khoản</span>
+                    </div>
+
+                    <div class="content profile">
+                        <div class="box-left-edit">
+                            <div class="title">Tên đăng nhập: 
+                                <span>duylm132</span>
+                                <span class="title-edit" id="nameUser">Thay đổi <i class="fa-solid fa-pen-to-square"></i></span>
+                            </div>
+                            <div class="name name-login">
+                                <label>Nhập tên đăng nhập mới: </label>
+                                <input type="text" placeholder="Nhập tên mới...">
+                            </div>
+
+                            <div class="title">
+                                Email: 
+                                <span>thanhduythptthanhbinh@gmail.com</span>
+                                <span class="title-edit" id="emailUser">Thay đổi <i class="fa-solid fa-pen-to-square"></i></span>
+                            </div>
+                            <div class="name email-login">
+                                <label>Nhập email mới: </label>
+                                <input type="email" placeholder="Nhập email mới...">
+                            </div>
+
+                            <div class="title">
+                                Password: 
+                                <span>**********</span>
+                                <span class="title-edit" id="passwordUser">Thay đổi <i class="fa-solid fa-pen-to-square"></i></span>
+                            </div>
+                            <div class="name password-login">
+                                <label>Nhập password mới: </label>
+                                <input type="password" placeholder="Nhập password mới...">
+                            </div>
+
+                            <div class="name password-again">
+                                <label>Nhập lại password: </label>
+                                <input type="password" placeholder="Nhập lại password mới...">
+                            </div>
+
+                            <div class="title">
+                                Địa chỉ: 
+                                <!-- Địa chỉ ban đầu sẽ chưa có -->
+                                <span>Tân Phú, Đồng Nai</span> 
+                                <span class="title-edit" id="addressUser">Thay đổi <i class="fa-solid fa-pen-to-square"></i></span>
+                            </div>
+                            <div class="name address-login">
+                                <label>Thay đổi địa chỉ: </label>
+                                <input type="text" placeholder="Nhập lại địa chỉ mới...">
+                            </div>
+
+
+                            <div class="inner-button">
+                                <input type="submit" value="Lưu thông tin">
+                            </div>
+                        </div>
+
+                        <div class="box-right-edit">
+                            <div class="images">
+                                <img src="../images/user.png" alt="">
+                            </div>
+
+                            <div class="inner-button">
+                                <label for="inputTag">
+                                    <input type="file" id="inputTag">
+                                    <input type="submit" value="Chọn một ảnh" class="button-item">
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="inner__wrap">
+
+                <div class="footer__top">
+                    <div class="footer__main">
+                        <div class="footer__title">
+                            28.Shop
+                        </div>
+                        <div class="footer__desc">
+                            Chúng tôi có những bộ quần áo phù hợp với phong cách của bạn và bạn có thể tự hào khi mặc.
+                        </div>
+                        <div class="footer__social">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__bar">
+                        <div class="footer__title">
+                            CÔNG TY
+                        </div>
+                        <ul class="footer__desc">
+                            <li><a href="">Giới Thiệu</a></li>
+                            <li><a href="">Sản Phẩm</a></li>
+                            <li><a href="">Công Việc</a></li>
+                            <li><a href="">Việc Làm</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bar">
+                        <div class="footer__title">
+                            Trợ giúp
+                        </div>
+                        <ul class="footer__desc">
+                            <li><a href="">Hỗ Trợ Khách Hàng</a></li>
+                            <li><a href="">Thông Tin Đơn Hàng</a></li>
+                            <li><a href="">Điều Khoản & Điều Kiện</a></li>
+                            <li><a href="">Chính Sách</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bar">
+                        <div class="footer__title">
+                            Tài nguyên
+                        </div>
+                        <ul class="footer__desc">
+                            <li><a href="">Sách Miễn Phí</a></li>
+                            <li><a href="">Bài Viết</a></li>
+                            <li><a href="">Kiến Thức</a></li>
+                            <li><a href="">Youtube</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bar">
+                        <div class="footer__title">
+                            FAQ
+                        </div>
+                        <ul class="footer__desc">
+                            <li><a href="">Tài Khoản</a></li>
+                            <li><a href="">Quản Lý Đơn Hàng</a></li>
+                            <li><a href="">Đơn Hàng</a></li>
+                            <li><a href="">Thanh Toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="footer__bottom">
+                    28.SHOP © 2024, All Rights Reserved
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>

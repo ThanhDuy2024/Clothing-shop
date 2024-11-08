@@ -1081,5 +1081,213 @@ form {
     cursor: pointer;
     color: red;
 }
-
 /* end cart */
+
+
+/* User */
+.user {
+    margin-top: 60px;
+}
+
+.user .inner__wrap {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.user .inner__wrap .box-right {
+    width: 15%;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+.user .inner__wrap .box-right .user-infor {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.user .inner__wrap .box-right .user-infor .images {
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.user .inner__wrap .box-right .user-infor .images img {
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 48/48;
+}
+
+.user .inner__wrap .box-right .user-infor .content .font{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.user .inner__wrap .box-right .user-infor .title {
+    font-weight: 700;
+}
+
+.user .inner__wrap .box-right .user-infor .edit {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.user .inner__wrap .box-right .user-infor .edit i {
+    padding-right: 5px;
+}
+
+.user .inner__wrap .inner-infor .title{
+    margin-bottom: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.user .inner__wrap .inner-infor .title:hover {
+    font-style: italic;
+    color: rgb(76, 76, 248);
+}
+
+.user .inner__wrap .inner-infor .infor-item {
+    padding-left: 20px;
+}
+
+.user .inner__wrap .inner-infor .infor-item a {
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user .inner__wrap .inner-infor .infor-item a:hover {
+    color: rgb(76, 76, 248);
+}
+
+
+.user .inner__wrap .box-left {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.user .inner__wrap .box-left .title {
+    margin-bottom: 18px;
+}
+
+.user .inner__wrap .box-left .title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.user .inner__wrap .box-left .title span {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.user .inner__wrap .box-left .content {
+    padding-top: 30px;
+    border-top: 1px solid rgb(210, 210, 210);
+    display: flex;
+}
+
+
+.user .inner__wrap .box-left .content .box-left-edit {
+    width: 60%;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .title {
+    font-weight: 700;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .title span {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .title .title-edit {
+    padding-right: 3px;
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .name {
+    display: none;
+    padding-right: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .show-user {
+    display: flex;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .name label {
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .name input {
+    flex: 1;
+    height: 40px;
+    outline: 0;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .inner-button input {
+    margin-top: 20px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(213, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.user .inner__wrap .box-left .content .box-left-edit .inner-button input:hover {
+    background-color: black;
+    color: white;
+}
+
+.user .inner__wrap .box-left .content .box-right-edit {
+    width: 40%;
+}
+
+.user .inner__wrap .box-left .content .box-right-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user .inner__wrap .box-left .content .box-right-edit .images img{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 100/100;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.user .inner__wrap .box-left .content .box-right-edit .inner-button input[type="file"] {
+    display: none;
+}
+
+.user .inner__wrap .box-left .content .box-right-edit .inner-button .button-item {
+    margin-top: 20px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(213, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+/* end user */

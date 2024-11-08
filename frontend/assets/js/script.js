@@ -89,3 +89,38 @@ if(productDetail) {
         overlay.classList.remove("show-overlay");
     })
 }
+
+//edit profile
+const nameUser = document.querySelector("#nameUser");
+if(nameUser) {
+    const nameLogin = document.querySelector(".name-login");
+    nameUser.addEventListener("click", () => {
+        nameLogin.classList.toggle("show-user");
+    })
+}
+
+const emailUser = document.querySelector("#emailUser");
+if(emailUser) {
+    const emailLogin = document.querySelector(".email-login");
+    emailUser.addEventListener("click", () => {
+        emailLogin.classList.toggle("show-user");
+    })
+}
+
+const passwordUser = document.querySelector("#passwordUser");
+if(passwordUser) {
+    const passwordLogin = document.querySelector(".password-login");
+    const passwordAgain = document.querySelector(".password-again");
+    passwordUser.addEventListener("click", () => {
+        passwordLogin.classList.toggle("show-user");
+        passwordAgain.classList.toggle("show-user");
+    })
+}
+
+const addressUser = document.querySelector("#addressUser");
+if(addressUser) {
+    const addressLogin = document.querySelector(".address-login");
+    addressUser.addEventListener("click", () => {
+        addressLogin.classList.toggle("show-user");
+    })
+}
