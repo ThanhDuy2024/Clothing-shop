@@ -836,7 +836,24 @@ form {
     margin-bottom: 30px;
 }
 
-.product-detail .content .inner-button span{
+.product-detail .content .inner-button div{
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00171F;
+    margin-right: 18px;
+    border: 2px solid #002A48;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 57px;
+    cursor: pointer;
+}
+
+.product-detail .content .inner-button form{
+    display: inline-flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 700;
     color: #00171F;
@@ -855,7 +872,7 @@ form {
     color: white;
 }
 
-.product-detail .content .inner-button span input {
+.product-detail .content .inner-button form input {
     border: none;
     background-color: transparent;
     font-size: 16px;

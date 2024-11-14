@@ -64,11 +64,14 @@
                     </div>
 
                     <div class="inner-button">
-                        <span class="bold">Liên hệ</span>
-                        <span class="submit">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="bold">Liên hệ</div>
+                        <form method="POST" action="add_cart.php" class="submit">
+                            <input type="hidden" name="Product_id" value="<?php echo $row['Product_id']; ?>">
+                            <input name="session_web123" id="session_web123" type="hidden" value="detail.php?Product_id=<?php echo $row['Product_id']; ?>">      
+                            <input type="hidden" name="user_id" value="<?php if(isset($_SESSION['login']['id'])){echo isset($_SESSION['login']['id']);}?>">
+                            <i class="fa-regular fa-heart"></i>        
                             <input type="submit" value="Thêm vào giỏ hàng">
-                        </span>
+                        </form>
                     </div>
 
                     <div class="discount-code">
